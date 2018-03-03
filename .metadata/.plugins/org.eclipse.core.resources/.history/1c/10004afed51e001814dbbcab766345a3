@@ -20,7 +20,7 @@ def solve(account):
     data = []
     vari_list = []
     conn = pymysql.connect(**db_config)
-    # T
+    # find out all T
     cursor = conn.cursor()
     cursor.execute("(select distinct tradedate from chicang where account=%s) union \
     (select distinct lastday from market.trade_day where lastday>='20140101' and \

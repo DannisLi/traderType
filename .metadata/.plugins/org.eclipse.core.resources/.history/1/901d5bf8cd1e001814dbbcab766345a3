@@ -1,5 +1,9 @@
 #-*- coding:utf8 -*-
 
+'''
+改变了exp2的采样方法，采用与《what makes investors trade? 》类似的采用方式，
+若T日到T+1日某合约发生仓位变化，则将这两日有持仓的所有合约加入数据集。
+'''
 
 import pymysql
 import numpy as np
@@ -20,7 +24,6 @@ def solve(account):
     data = []
     vari_list = []
     conn = pymysql.connect(**db_config)
-    # T
     cursor = conn.cursor()
     cursor.execute("(select distinct tradedate from chicang where account=%s) union \
     (select distinct lastday from market.trade_day where lastday>='20140101' and \
