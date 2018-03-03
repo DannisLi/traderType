@@ -1,0 +1,93 @@
+#-*- coding:utf8 -*-
+
+import datetime
+from multiprocessing import Pool
+from tradingday import shift
+from tendence import Tendence
+from dataSet import DataSet
+from dbOperator import DBOperator
+
+N = 15
+
+def work(account):
+    # 初始化数据集
+    dataset = {}
+    for n in range(2,N+1):
+        dataset[n] = DataSet(n)
+    # 数据查询器
+    op = DBOperator()
+    # 次日会出现发生行为的交易日
+    days = op.get_behavior_days(account)
+    for day in days:
+        if day==datetime.date(2016,12,30):
+            continue
+        # 下一个交易日
+        nextday = shift(day, 1)
+        # 今日持仓合约与持仓量
+        hold = op.get_oi(account, day)
+        # 下一日持仓合约与持仓量
+        next_hold = op.get_oi(account, nextday)
+        # 持仓量变化
+        change_hold = {}
+        for key in hold.keys():
+            qty1 = hold[key]
+            try:
+                qty2 = next_hold[key]
+                next_hold.pop(key)
+            except KeyError:
+                qty2 = 0
+            change_hold[key] = qty2 - qty1
+        for key in next_hold.keys():
+            change_hold[key] = next_hold[key]
+        # 每一次个持仓量变化代表一个行为，遍历每一个行为，分析看涨还是看跌，并分析行为前的价格走势
+        for key in change_hold.keys():
+            y = change_hold[key]
+            # 计算到交割月的月数
+            if 2000+int(key[1][:2]) > day.year:
+                month_till_deli = int(key[1][2:]) - day.month + 12
+            else:
+                month_till_deli = int(key[1][2:]) - day.month
+            # 查询过去N天的收益率，由近及远
+            for n in range(2,N+1):
+                try:
+                    settle = op.get_settle(key[0], key[1], day, n)
+                    assert len(settle)==n
+                    tend = Tendence(settle)
+                except:
+                    continue
+                dataset[n].add(y, tend.beta1, tend.R2, settle[-1], month_till_deli, key[0])
+    op.close()
+    
+    from statsmodels.regression.linear_model import OLS
+    from statsmodels.tools import add_constant
+    for n in range(2, N+1):
+        try:
+            Y = dataset[n].target_momentum
+            X = add_constant(dataset[n].data)
+            ols = OLS(Y, X)
+            result = ols.fit()
+        except:
+            continue
+        print (n)
+        print (result.summary(xname=['intercept'] +dataset[n].data_name))
+
+if __name__=='__main__':
+    work("499054712817")
+    
+    '''
+    # 创建工作进程池
+    pool = Pool()
+    
+    # 创建工作进程
+    with open('../data/account.csv','r') as f:
+        for line in f.readlines():
+            account = line.strip()
+            pool.apply_async(work, args=(account,))
+    
+    # 等待工作进程结束
+    pool.close()
+    pool.join()
+    
+    # 输出结束提示信息
+    print ('finish!')
+    '''

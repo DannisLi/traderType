@@ -1,0 +1,19 @@
+#-*- coding:utf8 -*-
+
+from db import get_connection
+from tendence import Tendence
+import datetime
+from dataSet import DataSet
+
+conn = get_connection()
+cursor = conn.cursor()
+
+tend = Tendence('rb', '1506', datetime.date(2015,4,10), 10, cursor)
+
+dataset = DataSet()
+dataset.add(1,tend.beta0, tend.beta1, tend.R2, 2, 'cu')
+
+print (dataset.data())
+
+cursor.close()
+conn.close()

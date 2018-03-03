@@ -1,0 +1,33 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\LiZimeng\Desktop\workspace\traderType\.metadata\.plugins\org.eclipse.core.resources\.projects\exp4\com.python.pydev.analysis\v2_indexcache
+main|1519656747591160000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp4\main.py
+db|1519631949351180000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp4\db.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+4=DB.__init__
+2=main
+1=db
+3=DB
+-- END DICTIONARY
+-- START TREE 1
+9
+DB|1|DB!9@
+acc|3|account_per_precess!19@account_num!19@accounts!19@
+db|1|db!19@
+mod|2|model2!18@model1!18@
+poo|1|pool!19@
+pro|1|process_num!19@
+s|1|s!19@
+sol|1|solve!18@
+t|1|t!19@
+-- END TREE
+-- START TREE 2
+5
+__i|1|__init__!3&10@
+clo|1|close!3&10@
+con|1|conn!4&11@
+cur|1|cursor!4&11@
+exe|1|execute_sql!3&10@
+-- END TREE

@@ -1,0 +1,14 @@
+#-*- coding:utf8 -*-
+
+from db import get_connection
+from tendence import Tendence
+import datetime
+
+conn = get_connection()
+cursor = conn.cursor()
+
+tend = Tendence('cu', '1506', datetime.date(2015,4,10), 8, cursor)
+print (tend.beta0, tend.beta1, tend.R2)
+
+cursor.close()
+conn.close()

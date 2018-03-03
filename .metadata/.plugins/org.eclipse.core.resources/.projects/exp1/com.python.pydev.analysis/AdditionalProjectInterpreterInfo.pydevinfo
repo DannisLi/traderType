@@ -1,0 +1,68 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\LiZimeng\Desktop\workspace\traderType\.metadata\.plugins\org.eclipse.core.resources\.projects\exp1\com.python.pydev.analysis\v2_indexcache
+tendence|1517414105673322000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\tendence.py
+test|1517126762801522000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\test.py
+dbOperator|1517423037962042000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\dbOperator.py
+tradingday|1517410106302390000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\tradingday.py
+main|1517424660639965000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\main.py
+dataSet|1517413008025834000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\dataSet.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+3=test
+2=dbOperator
+11=DataSet
+13=DataSet.clear
+10=DBOperator
+1=main
+7=Tendence
+6=tendence
+8=Tendence.__init__
+12=DBOperator.__init__
+5=tradingday
+4=dataSet
+9=DataSet.__init__
+-- END DICTIONARY
+-- START TREE 1
+18
+N|1|N!11@
+acc|1|account!19@
+con|1|conn!27@
+cur|1|cursor!27@
+dat|3|dataset!27@DataSet!33@dataset!35@
+day|1|day!43@
+db_|1|db_config!19@
+dbo|1|DBOperator!17@
+is_|1|is_tday!42@
+lin|1|line!43@
+mon|1|month!43@
+op|1|op!19@
+p|1|p!51@
+shi|1|shift!42@
+tda|1|tdays!43@
+ten|3|tend!51@Tendence!49@tend!27@
+wor|1|work!10@
+yea|1|year!43@
+-- END TREE
+-- START TREE 2
+18
+R2|1|R2!7&50@
+__b|2|__beta0!8&51@__beta1!8&51@
+__d|1|__data!9&35@
+__i|3|__init__!10&18@__init__!11&34@__init__!7&50@
+__r|1|__R2!8&51@
+__s|2|__slots__!11&35@__slots__!7&51@
+add|1|add!11&34@
+bet|2|beta0!7&50@beta1!7&50@
+cle|1|clear!11&34@
+clo|1|close!10&18@
+con|1|conn!12&19@
+cur|1|cursor!12&19@
+dat|2|data!11&34@data_name!11&34@
+emp|1|empty!11&34@
+get|3|get_oi!10&18@get_settle!10&18@get_behavior_days!10&18@
+n|1|n!9&35@
+tar|3|target_reverse!11&34@target!11&34@target_momentum!11&34@
+var|2|vari_list!9&35@vari_list!13&35@
+-- END TREE

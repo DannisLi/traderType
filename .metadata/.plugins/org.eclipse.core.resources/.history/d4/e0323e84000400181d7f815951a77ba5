@@ -1,0 +1,13 @@
+#-*- coding:utf8 -*-
+
+from db import get_connection
+from tendence import Tendence
+
+conn = get_connection()
+cursor = conn.cursor()
+
+tend = Tendence()
+
+
+cursor.close()
+conn.close()

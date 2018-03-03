@@ -1,0 +1,31 @@
+#-*- coding:utf8 -*-
+
+from tradingday import shift
+
+class Tendence(object):
+    sql = "select settle from market.contract_daily where vari=%s and deli=%s and day between %s and %s order by day asc"
+    _slots__ = ['beta0', 'beta1', 'R2']
+    
+    def __init__(self, vari, deli, day, n, cursor):
+        # 查询对数收益率
+        cursor.execute(Tendence.sql, (vari, deli, shift(day,-n+1), day))
+        p = [row[0] for row in cursor.fetchall()]
+        assert len(p)==n    # 合约上市不足n天抛出错误
+        # OLS拟合
+        self._ols()
+        
+    def __ols(self, p):
+        
+        pass
+        
+    @property
+    def beta0(self):
+        pass
+    
+    @property
+    def beta1(self):
+        pass
+    
+    @property
+    def R2(self):
+        pass

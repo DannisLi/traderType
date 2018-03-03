@@ -1,0 +1,24 @@
+#-*- coding:utf8 -*-
+
+import pymysql, time
+from multiprocessing import Semaphore, Process
+
+db_config = {
+    'host': '219.224.169.45',
+    'user': 'lizimeng',
+    'password': 'codegeass',
+    'charset': 'utf8'
+}
+
+class DBPool(object):
+    def __init__(self, max_connections=100):
+        self.semaphore = Semaphore(max_connections)
+        
+    def connect(self):
+        self.semaphore.acquire()
+        conn = pymysql.connect(**db_config)
+        return conn
+    
+    def close(self, conn):
+        conn.close()
+        self.semaphore.release()

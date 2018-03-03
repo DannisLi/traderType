@@ -1,0 +1,92 @@
+#-*- coding:utf8 -*-
+
+from db import get_connection
+from dataSet import DataSet
+from multiprocessing import Pool
+from tradingday import shift
+
+N = 15
+
+def work(account):
+    # 初始化数据集
+    dataset = {}
+    for n in range(2,N+1):
+        dataset[n] = DataSet()
+    # 初始化数据查询器
+    conn = get_connection()
+    cursor = conn.cursor()
+    # 次日会出现仓位变化的交易日
+    cursor.execute("(select distinct tradedate from investor.chicang where account=%s) union \
+    (select distinct lastday from market.trade_day where lastday between '20140101' and '20161231'\
+    day in (select distinct tradedate from investor.chicang where account=%s))")
+    days = [row[0] for row in cursor.fetchall()]
+    for day in days:
+        # 下一个交易日
+        nextday = shift(day)
+        # 下一个交易日可能会超出数据范围
+        if nextday.year > 2016:
+            continue
+        # 今日持仓合约与持仓量
+        hold = operator.get_contracts(account, day)
+        # 下一日持仓合约与持仓量
+        next_hold = operator.get_contracts(account, nextday)
+        # 持仓量变化
+        change_hold = {}
+        for key in hold.keys():
+            qty1 = hold[key]
+            try:
+                qty2 = next_hold[key]
+                next_hold.pop(key)
+            except ValueError:
+                qty2 = 0
+            change_hold[key] = qty2 - qty1
+        for key in next_hold.keys():
+            change_hold[key] = next_hold[key]
+        # 每一次个持仓量变化代表一个行为，遍历每一个行为，分析看涨还是看跌，并分析行为前的价格走势
+        for key in change_hold.keys():
+            # 确定行为类型
+            if key[2]=='0':
+                if change_hold[key]>0:
+                    y = 0
+                elif change_hold[key]<0:
+                    y = 1
+                else:
+                    y = 2
+            elif key[2]=='1':
+                if change_hold[key]>0:
+                    y = 1
+                elif change_hold[key]<0:
+                    y = 0
+                else:
+                    y = 2
+            else:
+                assert False
+            # 查询过去N天的收益率，由近及远
+            for n in range(2,N+1):
+                try:
+                    return_rate = operator.get_return_rate(key[0],key[1],day,n)
+                except:
+                    continue
+                tendence(return_rate, n)
+        
+    operator.close()
+
+
+if __name__=='__main__':
+    # 创建数据库连接池
+    dbpool = DBPool()
+    # 创建工作进程池
+    wpool = Pool()
+    
+    # 创建工作进程
+    with open('../data/account.csv','r') as f:
+        for line in f.readlines():
+            account = line.strip()
+            wpool.apply_async(work, args=(account,))
+    
+    # 等待工作进程结束
+    wpool.close()
+    wpool.join()
+    
+    # 输出结束提示信息
+    print ('finish!')

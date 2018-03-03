@@ -1,0 +1,63 @@
+#-*- coding:utf8 -*-
+
+import pymysql
+from tradingday import shift
+
+db_config = {
+    'host': '219.224.169.45',
+    'user': 'lizimeng',
+    'password': 'codegeass',
+    'charset': 'utf8'
+}
+
+class DBOperator(object):
+    
+    def __init__(self):
+        self.conn = pymysql.connect(**db_config)
+        self.cursor = self.conn.cursor()
+    
+    def get_behavior_days(self, account):
+        # 获取用户调整仓位的前一天的日期
+        res = set()
+        sql = "select distinct tradedate from investor.chicang where account=%s"
+        self.cursor.execute(sql, (account))
+        for row in self.cursor.fetchall():
+            lastday = shift(row[0], -1)
+            if lastday.year>=2014:
+                res.add(lastday)
+            res.add(row[0])
+        return list(res)
+    
+    def get_oi(self, account, day):
+        # 获取用户在day日的各合约仓位
+        sql = "select distinct vari,deli,bs_flag,sum(qty) from investor.chicang \
+        where account=%s and tradedate=%s group by vari,deli,bs_flag"
+        self.cursor.execute(sql, (account,day))
+        res = {}
+        for row in self.cursor.fetchall():
+            if row[2]=='0':
+                res[(row[0],row[1])] = int(row[3])
+            else:
+                res[(row[0],row[1])] = -1 * int(row[3])
+        return res
+    
+    def get_settle(self, vari, deli, day, n):
+        # 不足n天抛出错误
+        sql = "select settle from market.contract_daily where vari=%s and deli=%s and day between %s and %s order by day asc"
+        self.cursor.execute(sql, (vari, deli, shift(day,-n+1), day))
+        settle = [row[0] for row in self.cursor.fetchall()]
+        assert len(settle)==n
+        return settle
+    
+    def close(self):
+        self.cursor.close()
+        self.conn.close()
+    
+if __name__=='__main__':
+    import datetime
+    account = "488854692522"
+    op = DBOperator()
+    print (op.get_oi(account, datetime.date(2016,11,1)))
+    print (op.get_settle('cu', '1406', datetime.date(2014,1,6), 10))
+    op.close()
+    
