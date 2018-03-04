@@ -17,7 +17,6 @@ db_config = {
 
 
 def solve(account):
-    print (account)
     data = []
     # 用户交易过的品种
     vari_list = []
@@ -122,7 +121,6 @@ def solve(account):
                        (account, len(df), float(result.params['return_rate']), float(result.pvalues['return_rate'])))
         conn.commit()
     except Exception as e:
-        print (e)
         pass
     
     cursor.close()
