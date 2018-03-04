@@ -133,13 +133,13 @@ cursor = conn.cursor()
 cursor.execute("select distinct account from chicang")
 accounts = [row[0] for row in cursor.fetchall()]
 
-cursor.execute("select day from market.trade_day where day between '20140101' and '20161231' order by day asc")
+cursor.execute("select distinct day from market.trade_day where day between '20140101' and '20161231' order by day asc")
 tdays = [row[0] for row in cursor.fetchall()]
 
 cursor.close()
 conn.close()
 
-p = Pool(20)
+p = Pool()
 for account in accounts:
     p.apply_async(solve, args=(account,))
 p.close()
