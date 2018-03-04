@@ -17,7 +17,6 @@ db_config = {
 
 
 def solve(account):
-    print (account)
     data = []
     # 用户交易过的品种
     vari_list = []
@@ -121,8 +120,7 @@ def solve(account):
         cursor.execute("insert into traderType.exp2 (account,samples,coef,p) values (%s,%s,%s,%s)", 
                        (account, len(df), float(result.params['return_rate']), float(result.pvalues['return_rate'])))
         conn.commit()
-    except Exception as e:
-        print (e)
+    except:
         pass
     
     cursor.close()
