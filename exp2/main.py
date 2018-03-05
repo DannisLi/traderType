@@ -73,7 +73,7 @@ def solve(account):
                 continue
             avail_fund = cursor.fetchone()[0]
             # 每手数量
-            if cursor.execute("select hands from chicang where vari=%s and deli=%s limit 1", (vari,deli))==0:
+            if cursor.execute("select hand from market.vari2hand where vari=%s limit 1", (vari,))==0:
                 continue
             hand = cursor.fetchone()[0]
             # 据交割期时间
