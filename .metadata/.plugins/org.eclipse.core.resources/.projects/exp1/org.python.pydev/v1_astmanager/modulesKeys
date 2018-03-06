@@ -1,7 +1,2 @@
 MODULES_MANAGER_V2
-dataSet|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\dataSet.py
-dbOperator|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\dbOperator.py
-main|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\main.py
-tendence|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\tendence.py
-test|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\test.py
-tradingday|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\src\tradingday.py
+main|C:\Users\LiZimeng\Desktop\workspace\traderType\exp1\main.py

@@ -1,8 +1,2 @@
 eclipse.preferences.version=1
-encoding//src/dataSet.py=utf8
-encoding//src/dbOperator.py=utf8
-encoding//src/main.py=utf8
-encoding//src/tendence.py=utf8
-encoding//src/test.py=utf8
-encoding//src/tradingday.py=utf8
-encoding/<project>=UTF-8
+encoding/main.py=utf8

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;exp1/src/tradingday&apos; to &apos;tradingday.py&apos;" description="Rename resource &apos;tradingday&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/tradingday" name="tradingday.py" stamp="1516944052494" updateReferences="true"/>
-</session>
