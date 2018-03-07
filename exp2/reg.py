@@ -7,7 +7,7 @@
 import pandas as pd
 import statsmodels.api as sm
 
-f = open('regression.csv', 'w')
+f = open('regression.txt', 'w')
 
 df = pd.read_csv('features.csv', header='infer', index_col=0)
 
@@ -32,3 +32,4 @@ for field in ['is_institution', 'age', 'open_time']:
     f.write(result.summary(yname='is_reverse', xname=['intercept', field]))
     f.write('\n')
     
+f.close()
