@@ -22,8 +22,7 @@ for account,is_momentum,is_reverse in cursor.fetchall():
     else:
         is_institution = 0
         try:
-            birth = datetime.date(certificate_id[6:10], certificate_id[10:12], certificate_id[13:14])
-            age = 2017 - birth.year
+            age = 2017 - int(certificate_id[6:10])
         except:
             age = None
         open_time = (datetime.date(2017,1,1) - open_date).days
