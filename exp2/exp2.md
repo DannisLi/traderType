@@ -5,7 +5,7 @@
 | $is\_momentum$ | 是否为动量型投资者 | if $p<=0.1\ and\ beta_1>0$ then 1 else 0 |
 | $is\_reverse$  | 是否为逆向型投资者 | if $p<=0.1\ and\ beta_1<0$ then 1 else 0 |
 
-注：$p$和$\beta_1$为traderType.exp1中的字段
+注：$p​$和$\beta_1​$为traderType.exp1中的字段
 
 #解释变量
 
