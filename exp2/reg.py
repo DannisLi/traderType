@@ -7,8 +7,6 @@
 import pandas as pd
 import statsmodels.api as sm
 
-f = open('regression.txt', 'w')
-
 df = pd.read_csv('features.csv', header='infer', index_col=0)
 
 # 逐个特征回归
@@ -26,12 +24,11 @@ for field in ['is_institution', 'age', 'open_time']:
     
     model = sm.Logit(is_m, x)
     result = model.fit()
-    f.write(result.summary(yname='is_momentum', xname=['intercept', field]))
-    f.write('\n')
+    print result.summary(yname='is_momentum', xname=['intercept', field])
+    print ''
     
     model = sm.Logit(is_r, x)
     result = model.fit()
-    f.write(result.summary(yname='is_reverse', xname=['intercept', field]))
-    f.write('\n')
+    print result.summary(yname='is_reverse', xname=['intercept', field])
+    print ''
     
-f.close()

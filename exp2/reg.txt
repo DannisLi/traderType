@@ -1,0 +1,114 @@
+Optimization terminated successfully.
+         Current function value: 0.432742
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7701
+Model:                          Logit   Df Residuals:                     7699
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:                0.001877
+Time:                        18:29:23   Log-Likelihood:                -3332.5
+converged:                       True   LL-Null:                       -3338.8
+                                        LLR p-value:                 0.0003997
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+intercept         -1.6683      0.032    -52.722      0.000      -1.730      -1.606
+is_institution    -0.8067      0.255     -3.170      0.002      -1.306      -0.308
+==================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.345658
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7701
+Model:                          Logit   Df Residuals:                     7699
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:               3.531e-05
+Time:                        18:29:24   Log-Likelihood:                -2661.9
+converged:                       True   LL-Null:                       -2662.0
+                                        LLR p-value:                    0.6646
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+intercept         -2.0976      0.037    -56.619      0.000      -2.170      -2.025
+is_institution     0.0930      0.212      0.438      0.661      -0.323       0.509
+==================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.436926
+         Iterations 7
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7482
+Model:                          Logit   Df Residuals:                     7480
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:                0.001130
+Time:                        18:29:24   Log-Likelihood:                -3269.1
+converged:                       True   LL-Null:                       -3272.8
+                                        LLR p-value:                  0.006531
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -2.0144      0.138    -14.620      0.000      -2.284      -1.744
+age            0.0084      0.003      2.600      0.009       0.002       0.015
+==============================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.344442
+         Iterations 7
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7482
+Model:                          Logit   Df Residuals:                     7480
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:                0.001936
+Time:                        18:29:24   Log-Likelihood:                -2577.1
+converged:                       True   LL-Null:                       -2582.1
+                                        LLR p-value:                  0.001567
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -2.5803      0.161    -15.988      0.000      -2.897      -2.264
+age            0.0117      0.004      3.107      0.002       0.004       0.019
+==============================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.437392
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7482
+Model:                          Logit   Df Residuals:                     7480
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:               6.385e-05
+Time:                        18:29:26   Log-Likelihood:                -3272.6
+converged:                       True   LL-Null:                       -3272.8
+                                        LLR p-value:                    0.5180
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -1.6975      0.055    -30.721      0.000      -1.806      -1.589
+open_time   2.148e-05   3.32e-05      0.648      0.517   -4.35e-05    8.65e-05
+==============================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.342255
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7482
+Model:                          Logit   Df Residuals:                     7480
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 07 Mar 2018   Pseudo R-squ.:                0.008274
+Time:                        18:29:26   Log-Likelihood:                -2560.8
+converged:                       True   LL-Null:                       -2582.1
+                                        LLR p-value:                 6.290e-11
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -2.4518      0.068    -36.146      0.000      -2.585      -2.319
+open_time      0.0002   3.71e-05      6.632      0.000       0.000       0.000
+==============================================================================
+
