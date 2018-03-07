@@ -4,7 +4,6 @@
 回归分析
 '''
 
-import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 
@@ -17,7 +16,7 @@ for field in ['is_institution', 'age', 'open_time']:
     is_m = []
     is_r = []
     x = []
-    for index,row in df['is_momentum','is_reverse',field].dropna(axis=0, how='any'):
+    for index,row in df[['is_momentum','is_reverse',field]].dropna(axis=0, how='any'):
         is_m.append(row['is_momentum'])
         is_r.append(row['is_reverse'])
         x.append(row[field])
