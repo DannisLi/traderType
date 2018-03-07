@@ -18,7 +18,7 @@ for field in ['is_institution', 'age', 'open_time']:
     x = []
     samples = df[['is_momentum','is_reverse',field]]
     samples.dropna(axis=0, how='any', inplace=True)
-    for index,row in samples:
+    for index,row in samples.iterrows():
         is_m.append(row['is_momentum'])
         is_r.append(row['is_reverse'])
         x.append(row[field])
