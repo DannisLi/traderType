@@ -1,12 +1,23 @@
 -- VERSION_4
 -- START DISKCACHE_2
 C:\Users\LiZimeng\Desktop\workspace\traderType\.metadata\.plugins\org.eclipse.core.resources\.projects\exp2\com.python.pydev.analysis\v2_indexcache
+db|1520396955029139000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\db.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+1
+1=db
 -- END DICTIONARY
 -- START TREE 1
-0
+9
+age|0|
+bir|0|
+con|0|
+cur|0|
+dat|0|
+df|0|
+get|1|get_connection!10@
+is_|0|
+ope|0|
 -- END TREE
 -- START TREE 2
 0
