@@ -1,8 +1,8 @@
 -- VERSION_4
 -- START DISKCACHE_2
 C:\Users\LiZimeng\Desktop\workspace\traderType\.metadata\.plugins\org.eclipse.core.resources\.projects\exp2\com.python.pydev.analysis\v2_indexcache
-features|1520842137149122000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\features.py
-reg|1520779723015656000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\reg.py
+features|1520846397033850000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\features.py
+reg|1520871694706407000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\reg.py
 db|1520396955029139000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\db.py
 -- END DISKCACHE
 -- START DICTIONARY
@@ -12,7 +12,7 @@ db|1520396955029139000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\db.py
 3=db
 -- END DICTIONARY
 -- START TREE 1
-15
+17
 age|1|age!11@
 beg|1|begin!11@
 con|1|conn!11@
@@ -20,6 +20,8 @@ cur|1|cursor!11@
 dat|1|data!11@
 df|2|df!11@df!19@
 end|1|end!11@
+fie|1|fields!19@
+for|1|forced_times!11@
 get|1|get_connection!26@
 is_|3|is_institution!11@is_r!19@is_m!19@
 mod|1|model!19@

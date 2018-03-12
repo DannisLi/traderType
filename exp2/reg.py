@@ -1,9 +1,5 @@
 #-*- coding:utf8 -*-
 
-'''
-回归分析
-'''
-
 import pandas as pd
 import statsmodels.api as sm
 
@@ -34,3 +30,12 @@ for field in fields:
     print result.summary(yname='is_reverse', xname=['intercept', field])
     print ''
     
+# 使用所有特征回归
+model = sm.Logit(df.is_momentum, sm.add_constant(df.iloc[:,3:]))
+result = model.fit()
+print result.summary(yname='is_momentum', xname=['intercept']+fields)
+print ''
+
+model = sm.Logit(df.is_reverse, sm.add_constant(df.iloc[:,3:]))
+result = model.fit()
+print result.summary(yname='is_reverse', xname=['intercept']+fields)
