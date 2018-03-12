@@ -9,8 +9,10 @@ import statsmodels.api as sm
 
 df = pd.read_csv('features.csv', header='infer', index_col=0)
 
+fields = df.columns[3:]
+
 # 逐个特征回归
-for field in ['is_institution', 'age', 'open_time']:
+for field in fields:
     is_m = []
     is_r = []
     x = []
