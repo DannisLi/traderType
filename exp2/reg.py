@@ -30,3 +30,6 @@ for field in fields:
     print result.summary(yname='is_reverse', xname=['intercept', field])
     print ''
     
+# 机构投资者全部特征回归
+
+# 非机构投资者全部特征回归
