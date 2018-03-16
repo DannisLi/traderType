@@ -1,3 +1,8 @@
+reg.py:16: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  samples.dropna(axis=0, how='any', inplace=True)
 Optimization terminated successfully.
          Current function value: 0.432810
          Iterations 6
@@ -7,7 +12,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001879
-Time:                        09:39:48   Log-Likelihood:                -3332.2
+Time:                        19:35:23   Log-Likelihood:                -3332.2
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                 0.0003974
 ==================================================================================
@@ -26,7 +31,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               3.723e-05
-Time:                        09:39:48   Log-Likelihood:                -2657.5
+Time:                        19:35:23   Log-Likelihood:                -2657.5
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                    0.6564
 ==================================================================================
@@ -45,7 +50,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001139
-Time:                        09:39:49   Log-Likelihood:                -3268.7
+Time:                        19:35:24   Log-Likelihood:                -3268.7
 converged:                       True   LL-Null:                       -3272.4
                                         LLR p-value:                  0.006322
 ==============================================================================
@@ -64,7 +69,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001857
-Time:                        09:39:49   Log-Likelihood:                -2572.9
+Time:                        19:35:24   Log-Likelihood:                -2572.9
 converged:                       True   LL-Null:                       -2577.7
                                         LLR p-value:                  0.001971
 ==============================================================================
@@ -83,7 +88,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               6.392e-05
-Time:                        09:39:50   Log-Likelihood:                -3272.2
+Time:                        19:35:25   Log-Likelihood:                -3272.2
 converged:                       True   LL-Null:                       -3272.4
                                         LLR p-value:                    0.5178
 ==============================================================================
@@ -102,7 +107,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.008299
-Time:                        09:39:50   Log-Likelihood:                -2556.3
+Time:                        19:35:25   Log-Likelihood:                -2556.3
 converged:                       True   LL-Null:                       -2577.7
                                         LLR p-value:                 6.113e-11
 ==============================================================================
@@ -121,7 +126,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               1.798e-06
-Time:                        09:39:51   Log-Likelihood:                -3338.5
+Time:                        19:35:26   Log-Likelihood:                -3338.5
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                    0.9127
 ===============================================================================
@@ -140,7 +145,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               0.0002330
-Time:                        09:39:51   Log-Likelihood:                -2657.0
+Time:                        19:35:26   Log-Likelihood:                -2657.0
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                    0.2658
 ===============================================================================
@@ -159,7 +164,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               0.0002026
-Time:                        09:39:52   Log-Likelihood:                -3337.8
+Time:                        19:35:27   Log-Likelihood:                -3337.8
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                    0.2448
 ================================================================================
@@ -178,7 +183,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.002695
-Time:                        09:39:52   Log-Likelihood:                -2650.4
+Time:                        19:35:27   Log-Likelihood:                -2650.4
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                 0.0001539
 ================================================================================
@@ -197,7 +202,7 @@ Dep. Variable:            is_momentum   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001072
-Time:                        09:39:53   Log-Likelihood:                -3268.9
+Time:                        19:35:28   Log-Likelihood:                -3268.9
 converged:                       True   LL-Null:                       -3272.4
                                         LLR p-value:                  0.008076
 ==========================================================================================
@@ -216,7 +221,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001259
-Time:                        09:39:53   Log-Likelihood:                -2574.4
+Time:                        19:35:28   Log-Likelihood:                -2574.4
 converged:                       True   LL-Null:                       -2577.7
                                         LLR p-value:                   0.01085
 ==========================================================================================
@@ -235,8 +240,13 @@ Dep. Variable:            is_momentum   No. Observations:                 7687
 Model:                          Logit   Df Residuals:                     7685
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               4.625e-05
-Time:                        09:39:54   Log-Likelihood:                -3334.6
-converged:                       True   LL-Null:                       -3334.8
+Time:                        19:35:29   Log-Likelihood:                -3334.6
+converged:                       True   LL-Nureg.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  samples.dropna(axis=0, how='any', inplace=True)
+ll:                       -3334.8
                                         LLR p-value:                    0.5786
 ==============================================================================
                  coef    std err          z      P>|z|      [0.025      0.975]
@@ -254,7 +264,7 @@ Dep. Variable:             is_reverse   No. Observations:                 7687
 Model:                          Logit   Df Residuals:                     7685
 Method:                           MLE   Df Model:                            1
 Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.002166
-Time:                        09:39:54   Log-Likelihood:                -2646.3
+Time:                        19:35:29   Log-Likelihood:                -2646.3
 converged:                       True   LL-Null:                       -2652.0
                                         LLR p-value:                 0.0006994
 ==============================================================================
@@ -263,4 +273,99 @@ converged:                       True   LL-Null:                       -2652.0
 intercept     -1.8124      0.092    -19.783      0.000      -1.992      -1.633
 leverage      -0.0517      0.016     -3.329      0.001      -0.082      -0.021
 ==============================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.433684
+         Iterations 5
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7687
+Model:                          Logit   Df Residuals:                     7683
+Method:                           MLE   Df Model:                            3
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               0.0003054
+Time:                        19:35:29   Log-Likelihood:                -3333.7
+converged:                       True   LL-Null:                       -3334.8
+                                        LLR p-value:                    0.5648
+================================================================================
+                   coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------
+intercept       -1.6312      0.079    -20.712      0.000      -1.786      -1.477
+trade_times  -4.213e-06   3.82e-05     -0.110      0.912   -7.91e-05    7.07e-05
+forced_times     0.0134      0.010      1.378      0.168      -0.006       0.032
+leverage        -0.0106      0.013     -0.814      0.416      -0.036       0.015
+================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.343628
+         Iterations 7
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7687
+Model:                          Logit   Df Residuals:                     7683
+Method:                           MLE   Df Model:                            3
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.003971
+Time:                        19:35:29   Log-Likelihood:                -2641.5
+converged:                       True   LL-Null:                       -2652.0
+                        reg.py:52: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  samples.dropna(axis=0, how='any', inplace=True)
+                LLR p-value:                 0.0001023
+================================================================================
+                   coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------
+intercept       -1.8514      0.093    -19.897      0.000      -2.034      -1.669
+trade_times  -5.607e-05   7.08e-05     -0.792      0.428      -0.000    8.26e-05
+forced_times    -0.0816      0.034     -2.385      0.017      -0.149      -0.015
+leverage        -0.0385      0.016     -2.383      0.017      -0.070      -0.007
+================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.436515
+         Iterations 7
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7468
+Model:                          Logit   Df Residuals:                     7461
+Method:                           MLE   Df Model:                            6
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.002691
+Time:                        19:35:29   Log-Likelihood:                -3259.9
+converged:                       True   LL-Null:                       -3268.7
+                                        LLR p-value:                  0.007342
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+intercept                 -1.9602      0.159    -12.351      0.000      -2.271      -1.649
+age                        0.0087      0.003      2.565      0.010       0.002       0.015
+open_time               6.253e-06   3.47e-05      0.180      0.857   -6.18e-05    7.43e-05
+trade_times            -2.834e-06    3.8e-05     -0.075      0.941   -7.73e-05    7.17e-05
+forced_times               0.0150      0.010      1.514      0.130      -0.004       0.034
+is_Beijing_or_Shanghai    -0.7095      0.282     -2.513      0.012      -1.263      -0.156
+leverage                  -0.0120      0.013     -0.901      0.368      -0.038       0.014
+==========================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.339789
+         Iterations 8
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7468
+Model:                          Logit   Df Residuals:                     7461
+Method:                           MLE   Df Model:                            6
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                 0.01343
+Time:                        19:35:29   Log-Likelihood:                -2537.5
+converged:                       True   LL-Null:                       -2572.1
+                                        LLR p-value:                 6.238e-13
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+intercept                 -2.3601      0.190    -12.405      0.000      -2.733      -1.987
+age                        0.0041      0.004      1.006      0.314      -0.004       0.012
+open_time                  0.0002   3.91e-05      6.066      0.000       0.000       0.000
+trade_times            -3.298e-05   6.36e-05     -0.519      0.604      -0.000    9.17e-05
+forced_times              -0.0772      0.034     -2.253      0.024      -0.144      -0.010
+is_Beijing_or_Shanghai     0.4585      0.214      2.143      0.032       0.039       0.878
+leverage                  -0.0417      0.017     -2.519      0.012      -0.074      -0.009
+==========================================================================================
 
