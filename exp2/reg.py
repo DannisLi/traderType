@@ -31,7 +31,8 @@ for field in fields:
     print ''
     
 # 机构投资者全部特征回归
-samples = df[['is_momentum', 'is_reverse', 'trade_times', 'forced_times', 'leverage']]
+samples = df[df.is_institution=1]
+samples = samples[['is_momentum', 'is_reverse', 'trade_times', 'forced_times', 'leverage']]
 samples.dropna(axis=0, how='any', inplace=True)
 X = sm.add_constant(samples[['trade_times', 'forced_times', 'leverage']].values)
 # is_monentum
@@ -48,7 +49,8 @@ print result.summary(yname='is_reverse', xname=['intercept', 'trade_times', 'for
 print ''
 
 # 非机构投资者全部特征回归
-samples = df[['is_momentum', 'is_reverse', 'age', 'open_time','trade_times', 'forced_times', 'is_Beijing_or_Shanghai', 'leverage']]
+samples = df[df.is_institution=0]
+samples = samples[['is_momentum', 'is_reverse', 'age', 'open_time','trade_times', 'forced_times', 'is_Beijing_or_Shanghai', 'leverage']]
 samples.dropna(axis=0, how='any', inplace=True)
 X = sm.add_constant(samples[['age', 'open_time','trade_times', 'forced_times', 'is_Beijing_or_Shanghai', 'leverage']].values)
 # is_monentum
