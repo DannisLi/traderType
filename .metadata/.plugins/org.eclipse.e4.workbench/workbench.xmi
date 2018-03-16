@@ -211,7 +211,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Km6SgCYNEeiMaZNtmXgrfw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="reg" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;reg.py&quot; partName=&quot;reg&quot; title=&quot;reg&quot; tooltip=&quot;exp2/reg.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/exp2/reg.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;777&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;reg.py&quot; partName=&quot;reg&quot; title=&quot;reg&quot; tooltip=&quot;exp2/reg.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/exp2/reg.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2162&quot; selectionTopPixel=&quot;874&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -392,7 +392,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_m1c8_AbbEeibmaTxa0jBNA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oFbLgChpEei78Zwllm2Mzw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m1e0dwbbEeibmaTxa0jBNA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_yAtTACjkEeiCtKV4HsbPRw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m1e0dwbbEeibmaTxa0jBNA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_m1c9CQbbEeibmaTxa0jBNA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,7 +419,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_m1c9RQbbEeibmaTxa0jBNA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oFigQChpEei78Zwllm2Mzw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m1e0KwbbEeibmaTxa0jBNA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_yAxkcCjkEeiCtKV4HsbPRw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m1e0KwbbEeibmaTxa0jBNA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_m1c9UQbbEeibmaTxa0jBNA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

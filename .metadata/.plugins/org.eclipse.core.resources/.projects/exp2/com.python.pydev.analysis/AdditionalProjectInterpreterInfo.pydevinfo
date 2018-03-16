@@ -1,35 +1,36 @@
 -- VERSION_4
 -- START DISKCACHE_2
 C:\Users\LiZimeng\Desktop\workspace\traderType\.metadata\.plugins\org.eclipse.core.resources\.projects\exp2\com.python.pydev.analysis\v2_indexcache
-features|1520846397033850000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\features.py
-reg|1520872786402057000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\reg.py
+features|1521155455884256000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\features.py
 db|1520396955029139000|C:\Users\LiZimeng\Desktop\workspace\traderType\exp2\db.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
+2
 1=features
-2=reg
-3=db
+2=db
 -- END DICTIONARY
 -- START TREE 1
-17
+20
+X|0|
+Y|0|
 age|1|age!11@
 beg|1|begin!11@
 con|1|conn!11@
 cur|1|cursor!11@
 dat|1|data!11@
-df|2|df!11@df!19@
+df|1|df!11@
 end|1|end!11@
-fie|1|fields!19@
+fie|0|
 for|1|forced_times!11@
-get|1|get_connection!26@
-is_|3|is_institution!11@is_r!19@is_m!19@
-mod|1|model!19@
+get|1|get_connection!18@
+is_|2|is_Beijing_or_Shanghai!11@is_institution!11@
+lev|1|leverage!11@
+mod|0|
 ope|1|open_time!11@
-res|1|result!19@
-sam|1|samples!19@
+res|0|
+sam|0|
 tra|1|trade_times!11@
-x|1|x!19@
+x|0|
 -- END TREE
 -- START TREE 2
 0
