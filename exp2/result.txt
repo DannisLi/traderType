@@ -6,8 +6,8 @@ Optimization terminated successfully.
 Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:                0.001879
-Time:                        00:38:42   Log-Likelihood:                -3332.2
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001879
+Time:                        09:39:48   Log-Likelihood:                -3332.2
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                 0.0003974
 ==================================================================================
@@ -25,8 +25,8 @@ Optimization terminated successfully.
 Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:               3.723e-05
-Time:                        00:38:42   Log-Likelihood:                -2657.5
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               3.723e-05
+Time:                        09:39:48   Log-Likelihood:                -2657.5
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                    0.6564
 ==================================================================================
@@ -44,8 +44,8 @@ Optimization terminated successfully.
 Dep. Variable:            is_momentum   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:                0.001139
-Time:                        00:38:43   Log-Likelihood:                -3268.7
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001139
+Time:                        09:39:49   Log-Likelihood:                -3268.7
 converged:                       True   LL-Null:                       -3272.4
                                         LLR p-value:                  0.006322
 ==============================================================================
@@ -63,8 +63,8 @@ Optimization terminated successfully.
 Dep. Variable:             is_reverse   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:                0.001857
-Time:                        00:38:43   Log-Likelihood:                -2572.9
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001857
+Time:                        09:39:49   Log-Likelihood:                -2572.9
 converged:                       True   LL-Null:                       -2577.7
                                         LLR p-value:                  0.001971
 ==============================================================================
@@ -82,8 +82,8 @@ Optimization terminated successfully.
 Dep. Variable:            is_momentum   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:               6.392e-05
-Time:                        00:38:44   Log-Likelihood:                -3272.2
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               6.392e-05
+Time:                        09:39:50   Log-Likelihood:                -3272.2
 converged:                       True   LL-Null:                       -3272.4
                                         LLR p-value:                    0.5178
 ==============================================================================
@@ -101,8 +101,8 @@ Optimization terminated successfully.
 Dep. Variable:             is_reverse   No. Observations:                 7480
 Model:                          Logit   Df Residuals:                     7478
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:                0.008299
-Time:                        00:38:44   Log-Likelihood:                -2556.3
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.008299
+Time:                        09:39:50   Log-Likelihood:                -2556.3
 converged:                       True   LL-Null:                       -2577.7
                                         LLR p-value:                 6.113e-11
 ==============================================================================
@@ -120,8 +120,8 @@ Optimization terminated successfully.
 Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:               1.798e-06
-Time:                        00:38:45   Log-Likelihood:                -3338.5
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               1.798e-06
+Time:                        09:39:51   Log-Likelihood:                -3338.5
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                    0.9127
 ===============================================================================
@@ -139,8 +139,8 @@ Optimization terminated successfully.
 Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:               0.0002330
-Time:                        00:38:45   Log-Likelihood:                -2657.0
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               0.0002330
+Time:                        09:39:51   Log-Likelihood:                -2657.0
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                    0.2658
 ===============================================================================
@@ -158,8 +158,8 @@ Optimization terminated successfully.
 Dep. Variable:            is_momentum   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:               0.0002026
-Time:                        00:38:46   Log-Likelihood:                -3337.8
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               0.0002026
+Time:                        09:39:52   Log-Likelihood:                -3337.8
 converged:                       True   LL-Null:                       -3338.5
                                         LLR p-value:                    0.2448
 ================================================================================
@@ -177,8 +177,8 @@ Optimization terminated successfully.
 Dep. Variable:             is_reverse   No. Observations:                 7699
 Model:                          Logit   Df Residuals:                     7697
 Method:                           MLE   Df Model:                            1
-Date:                Tue, 13 Mar 2018   Pseudo R-squ.:                0.002695
-Time:                        00:38:46   Log-Likelihood:                -2650.4
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.002695
+Time:                        09:39:52   Log-Likelihood:                -2650.4
 converged:                       True   LL-Null:                       -2657.6
                                         LLR p-value:                 0.0001539
 ================================================================================
@@ -187,4 +187,80 @@ converged:                       True   LL-Null:                       -2657.6
 intercept       -2.0622      0.038    -54.800      0.000      -2.136      -1.988
 forced_times    -0.1033      0.035     -2.969      0.003      -0.171      -0.035
 ================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.437022
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7480
+Model:                          Logit   Df Residuals:                     7478
+Method:                           MLE   Df Model:                            1
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001072
+Time:                        09:39:53   Log-Likelihood:                -3268.9
+converged:                       True   LL-Null:                       -3272.4
+                                        LLR p-value:                  0.008076
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+intercept                 -1.6566      0.032    -51.992      0.000      -1.719      -1.594
+is_Beijing_or_Shanghai    -0.6811      0.282     -2.418      0.016      -1.233      -0.129
+==========================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.344177
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7480
+Model:                          Logit   Df Residuals:                     7478
+Method:                           MLE   Df Model:                            1
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.001259
+Time:                        09:39:53   Log-Likelihood:                -2574.4
+converged:                       True   LL-Null:                       -2577.7
+                                        LLR p-value:                   0.01085
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+intercept                 -2.1151      0.038    -56.088      0.000      -2.189      -2.041
+is_Beijing_or_Shanghai     0.5721      0.212      2.704      0.007       0.157       0.987
+==========================================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.433797
+         Iterations 5
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            is_momentum   No. Observations:                 7687
+Model:                          Logit   Df Residuals:                     7685
+Method:                           MLE   Df Model:                            1
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:               4.625e-05
+Time:                        09:39:54   Log-Likelihood:                -3334.6
+converged:                       True   LL-Null:                       -3334.8
+                                        LLR p-value:                    0.5786
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -1.6448      0.078    -21.082      0.000      -1.798      -1.492
+leverage      -0.0070      0.013     -0.554      0.579      -0.032       0.018
+==============================================================================
+
+Optimization terminated successfully.
+         Current function value: 0.344250
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             is_reverse   No. Observations:                 7687
+Model:                          Logit   Df Residuals:                     7685
+Method:                           MLE   Df Model:                            1
+Date:                Fri, 16 Mar 2018   Pseudo R-squ.:                0.002166
+Time:                        09:39:54   Log-Likelihood:                -2646.3
+converged:                       True   LL-Null:                       -2652.0
+                                        LLR p-value:                 0.0006994
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept     -1.8124      0.092    -19.783      0.000      -1.992      -1.633
+leverage      -0.0517      0.016     -3.329      0.001      -0.082      -0.021
+==============================================================================
 
